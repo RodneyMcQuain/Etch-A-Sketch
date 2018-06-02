@@ -1,0 +1,25 @@
+div.inside {
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+#containerDiv {
+  width: 480px;
+  height: 480px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+button {
+  margin: 0 auto;
+}
+
+#buttonDiv {
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
