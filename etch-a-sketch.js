@@ -14,22 +14,21 @@ btClear.addEventListener('click', removeGrid);
 } */
 
 function createGrid(gridSize) {
-  var containerDivPixels = 30 * gridSize;
-	var gridNum = gridSize * gridSize;
+    var containerDivPixels = 30 * gridSize;
+    var gridNum = gridSize * gridSize;
   
-  containerDiv = document.getElementById("containerDiv");
-	containerDiv.style.width = containerDivPixels + "px";
- 	containerDiv.style.height = containerDivPixels + "px";
+    containerDiv = document.getElementById("containerDiv");
+    containerDiv.style.width = containerDivPixels + "px";
+    containerDiv.style.height = containerDivPixels + "px";
 
-  for (var i = 0; i < gridNum; i++) {
- 		div = document.createElement("div");
+    for (var i = 0; i < gridNum; i++) {
+        div = document.createElement("div");
   	div.className = "inside";
   	div.idName = "div";
   
- 	 	div.addEventListener('mouseover', changeColor);
-  
-		containerDiv.append(div);
-	}
+ 	div.addEventListener('mouseover', changeColor);
+	containerDiv.append(div);
+    }
 }
 
 function changeColor() {
@@ -37,11 +36,11 @@ function changeColor() {
 }
 
 function removeGrid() {
-	var insides = document.getElementsByClassName("inside");
+    var insides = document.getElementsByClassName("inside");
   
-  while(insides[0])
-  	insides[0].parentNode.removeChild(insides[0])
+    while(insides[0])
+         insides[0].parentNode.removeChild(insides[0])
     
-  var gridSize = window.prompt("New grid size?");
-  createGrid(gridSize);
+    var gridSize = window.prompt("New grid size?");
+    createGrid(gridSize);
 }
